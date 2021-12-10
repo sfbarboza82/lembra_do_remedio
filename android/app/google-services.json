@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "893473356701",
+    "project_id": "lembradoremedio-2d985",
+    "storage_bucket": "lembradoremedio-2d985.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893473356701:android:af9c4d220ef2280312cd74",
+        "android_client_info": {
+          "package_name": "com.lembradoremedio.lembra_do_remedio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893473356701-s3njpl6s3oq0c2fn26n22v1t0tuvlqcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPPdQGWGkSJiidXvD1a8BALLQFmwvWCS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893473356701-s3njpl6s3oq0c2fn26n22v1t0tuvlqcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

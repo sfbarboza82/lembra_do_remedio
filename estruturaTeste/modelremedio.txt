@@ -1,0 +1,47 @@
+class RemedyModel {
+  late String codigoProduto;
+  late String nomeComercial;
+  // late String classesTerapeuticas;
+  // late String principioAtivo;
+  // late String medicamentoReferencia;
+  // late String categoriaRegulatoria;
+  // late String apresentacao;
+  // late String formasFarmaceuticas;
+  // late String viasAdministracao;
+  // late String restricaoUso;
+  // late String restricaoPrescricao;
+  // late String tarja;
+  // late String cnpj;
+
+  RemedyModel({
+    required this.codigoProduto,
+    required this.nomeComercial
+    // required this.classesTerapeuticas,
+    // required this.principioAtivo,
+    // required this.medicamentoReferencia,
+    // required this.categoriaRegulatoria
+    // required this.apresentacao,
+    // required this.formasFarmaceuticas,
+    // required this.viasAdministracao,
+    // required this.restricaoUso,
+    // required this.restricaoPrescricao,
+    // required this.tarja,
+    // required this.cnpj
+  });
+
+  RemedyModel.fromJson(Map<String, dynamic> json) {
+    codigoProduto = json[' codigoProduto'];
+    nomeComercial = json[' nomeComercial'];
+    // classesTerapeuticas = json['classesTerapeuticas'];
+    // principioAtivo = json[' principioAtivo'];
+    // medicamentoReferencia = json[' medicamentoReferencia'];
+    // categoriaRegulatoria = json[' categoriaRegulatoria'];
+    // // apresentacao = json[' apresentacao'];
+    // formasFarmaceuticas = json[' formasFarmaceuticas'];
+    // viasAdministracao = json[' viasAdministracao'];
+    // restricaoUso = json[' restricaoUso'];
+    // restricaoPrescricao = json[' restricaoPrescricao'];
+    // tarja = json[' tarja'];
+    // cnpj = json ['empresa'] [' cnpj'];
+  }
+}

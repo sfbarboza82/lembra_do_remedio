@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<codigoProduto>1030766</codigoProduto>
+<tipoProduto>1</tipoProduto>
+<dataProduto>2015-06-22T00:00:00.000-0300</dataProduto>
+<nomeComercial>DIPIRONA</nomeComercial>
+<classesTerapeuticas>ANALGESICOS NAO NARCOTICOS</classesTerapeuticas>
+<numeroRegistro>183260244</numeroRegistro>
+<dataVencimento />
+<mesAnoVencimento>082027</mesAnoVencimento>
+<codigoParecerPublico />
+<codigoBulaPaciente>eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxMzk3NzQ3MiIsIm5iZiI6MTYzNTM1NzA4MSwiZXhwIjoxNjM1MzU3MzgxfQ.dUTHOzBewFuOZd8aIpeI9djmhBDMxqIfbATqHT62zriaK-ak291VBty_XsHBRQLUolAmcpUx_5d7Hl9OaosK4g</codigoBulaPaciente>
+<codigoBulaProfissional>eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxMzk3NzQ3OSIsIm5iZiI6MTYzNTM1NzA4MSwiZXhwIjoxNjM1MzU3MzgxfQ.b8NKOVJ0yXsl9TZthZWvmjDfn3DwW2kV_U8E1vKb6Gm9iq8lhnxFwtt1srLinTLc23ibHjoNvaU9KDJ5RsnD8A</codigoBulaProfissional>
+<dataVencimentoRegistro>2027-08-01T00:00:00.000-0300</dataVencimentoRegistro>
+<principioAtivo>DIPIRONA</principioAtivo>
+<medicamentoReferencia>NOVALGINA</medicamentoReferencia>
+<categoriaRegulatoria>Genérico</categoriaRegulatoria>
+<classeTerapeutica />
+<atc>ANALGESICOS NAO NARCOTICOS</atc>
+<empresa>
+    <cnpj>10588595001092</cnpj>
+    <razaoSocial>SANOFI MEDLEY FARMACÊUTICA LTDA.</razaoSocial>
+    <numeroAutorizacao>1083267</numeroAutorizacao>
+</empresa>
+<processo>
+    <numero>25351691522201419</numero>
+    <situacao>29</situacao>
+</processo>
+<apresentacoes>
+    <codigo>1597089</codigo>
+    <apresentacao>50 MG/ML SOL OR CT FR VD AMB X 100 ML + COP</apresentacao>
+    <formasFarmaceuticas>SOLUÇAO ORAL</formasFarmaceuticas>
+    <numero>1</numero>
+    <tonalidade />
+    <dataPublicacao>2015-06-22T00:00:00.000-0300</dataPublicacao>
+    <validade>24</validade>
+    <tipoValidade>2</tipoValidade>
+    <registro>1832602440011</registro>
+    <principiosAtivos>DIPIRONA</principiosAtivos>
+    <complemento />
+    <embalagemPrimaria>
+        <tipo>FRASCO DE VIDRO AMBAR</tipo>
+        <observacao />
+    </embalagemPrimaria>
+    <embalagemSecundaria>
+        <tipo>CARTUCHO DE CARTOLINA</tipo>
+        <observacao />
+    </embalagemSecundaria>
+    <embalagemSecundariaTodas>
+        <tipo>CARTUCHO DE CARTOLINA</tipo>
+        <observacao />
+    </embalagemSecundariaTodas>
+    <acondicionamento />
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595001092</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>SUZANO</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595000797</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>CAMPINAS</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <viasAdministracao>ORAL</viasAdministracao>
+    <ifaUnico>true</ifaUnico>
+    <conservacao>CONSERVAR EM  TEMPERATURA AMBIENTE ( AMBIENTE COM TEMPERATURA ENTRE 15 E 30ºC)</conservacao>
+    <conservacao>PROTEGER DA LUZ</conservacao>
+    <restricaoPrescricao>Venda sem Prescrição Médica</restricaoPrescricao>
+    <restricaoUso>Adulto e Pediátrico acima de  3 meses</restricaoUso>
+    <destinacao>Comercial</destinacao>
+    <restricaoHospitais>N</restricaoHospitais>
+    <tarja>Sem Tarja</tarja>
+    <medicamentoReferencia>N</medicamentoReferencia>
+    <apresentacaoFracionada>N</apresentacaoFracionada>
+    <dataVencimentoRegistro />
+    <ativa>true</ativa>
+    <inativa>false</inativa>
+    <emAnalise>false</emAnalise>
+</apresentacoes>
+<apresentacoes>
+    <codigo>1597090</codigo>
+    <apresentacao>50 MG/ML SOL OR CT FR VD AMB X 200 ML + COP</apresentacao>
+    <formasFarmaceuticas>SOLUÇAO ORAL</formasFarmaceuticas>
+    <numero>2</numero>
+    <tonalidade />
+    <dataPublicacao>2015-06-22T00:00:00.000-0300</dataPublicacao>
+    <validade>24</validade>
+    <tipoValidade>2</tipoValidade>
+    <registro>1832602440021</registro>
+    <principiosAtivos>DIPIRONA</principiosAtivos>
+    <complemento />
+    <embalagemPrimaria>
+        <tipo>FRASCO DE VIDRO AMBAR</tipo>
+        <observacao />
+    </embalagemPrimaria>
+    <embalagemSecundaria>
+        <tipo>CARTUCHO DE CARTOLINA</tipo>
+        <observacao />
+    </embalagemSecundaria>
+    <embalagemSecundariaTodas>
+        <tipo>CARTUCHO DE CARTOLINA</tipo>
+        <observacao />
+    </embalagemSecundariaTodas>
+    <acondicionamento />
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595001092</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>SUZANO</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595000797</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>CAMPINAS</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <viasAdministracao>ORAL</viasAdministracao>
+    <ifaUnico>true</ifaUnico>
+    <conservacao>CONSERVAR EM  TEMPERATURA AMBIENTE ( AMBIENTE COM TEMPERATURA ENTRE 15 E 30ºC)</conservacao>
+    <conservacao>PROTEGER DA LUZ</conservacao>
+    <restricaoPrescricao>Venda sem Prescrição Médica</restricaoPrescricao>
+    <restricaoUso>Adulto e Pediátrico acima de  3 meses</restricaoUso>
+    <destinacao>Comercial</destinacao>
+    <restricaoHospitais>N</restricaoHospitais>
+    <tarja>Sem Tarja</tarja>
+    <medicamentoReferencia>N</medicamentoReferencia>
+    <apresentacaoFracionada>N</apresentacaoFracionada>
+    <dataVencimentoRegistro />
+    <ativa>true</ativa>
+    <inativa>false</inativa>
+    <emAnalise>false</emAnalise>
+</apresentacoes>
+<apresentacoes>
+    <codigo>1597091</codigo>
+    <apresentacao>50 MG/ML SOL OR CX 24 FR VD AMB X 100 ML + 24 COP</apresentacao>
+    <formasFarmaceuticas>SOLUÇAO ORAL</formasFarmaceuticas>
+    <numero>3</numero>
+    <tonalidade />
+    <dataPublicacao>2015-06-22T00:00:00.000-0300</dataPublicacao>
+    <validade>24</validade>
+    <tipoValidade>2</tipoValidade>
+    <registro>1832602440038</registro>
+    <principiosAtivos>DIPIRONA</principiosAtivos>
+    <complemento />
+    <embalagemPrimaria>
+        <tipo>FRASCO DE VIDRO AMBAR</tipo>
+        <observacao />
+    </embalagemPrimaria>
+    <embalagemSecundaria>
+        <tipo>CAIXA DE PAPELAO COM COLMEIA</tipo>
+        <observacao />
+    </embalagemSecundaria>
+    <embalagemSecundariaTodas>
+        <tipo>CAIXA DE PAPELAO COM COLMEIA</tipo>
+        <observacao />
+    </embalagemSecundariaTodas>
+    <acondicionamento />
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595001092</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>SUZANO</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595000797</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>CAMPINAS</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <viasAdministracao>ORAL</viasAdministracao>
+    <ifaUnico>true</ifaUnico>
+    <conservacao>CONSERVAR EM  TEMPERATURA AMBIENTE ( AMBIENTE COM TEMPERATURA ENTRE 15 E 30ºC)</conservacao>
+    <conservacao>PROTEGER DA LUZ</conservacao>
+    <restricaoPrescricao>Venda sem Prescrição Médica</restricaoPrescricao>
+    <restricaoUso>Adulto e Pediátrico acima de  3 meses</restricaoUso>
+    <destinacao>Comercial</destinacao>
+    <restricaoHospitais>N</restricaoHospitais>
+    <tarja>Sem Tarja</tarja>
+    <medicamentoReferencia>N</medicamentoReferencia>
+    <apresentacaoFracionada>N</apresentacaoFracionada>
+    <dataVencimentoRegistro />
+    <ativa>true</ativa>
+    <inativa>false</inativa>
+    <emAnalise>false</emAnalise>
+</apresentacoes>
+<apresentacoes>
+    <codigo>1597092</codigo>
+    <apresentacao>50 MG/ML SOL OR CX 24 FR VD AMB X 200 ML + 24 COP</apresentacao>
+    <formasFarmaceuticas>SOLUÇAO ORAL</formasFarmaceuticas>
+    <numero>4</numero>
+    <tonalidade />
+    <dataPublicacao>2015-06-22T00:00:00.000-0300</dataPublicacao>
+    <validade>24</validade>
+    <tipoValidade>2</tipoValidade>
+    <registro>1832602440046</registro>
+    <principiosAtivos>DIPIRONA</principiosAtivos>
+    <complemento />
+    <embalagemPrimaria>
+        <tipo>FRASCO DE VIDRO AMBAR</tipo>
+        <observacao />
+    </embalagemPrimaria>
+    <embalagemSecundaria />
+    <embalagemSecundariaTodas>
+        <tipo>CAIXA DE PAPELAO COM COLMEIA</tipo>
+        <observacao />
+    </embalagemSecundariaTodas>
+    <acondicionamento />
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595001092</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>SUZANO</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <fabricantesNacionais>
+        <fabricante>SANOFI MEDLEY FARMACÊUTICA LTDA.</fabricante>
+        <cnpj>10588595000797</cnpj>
+        <pais>BRASIL</pais>
+        <uf>SP</uf>
+        <cidade>CAMPINAS</cidade>
+        <etapaFabricacao>Processo produtivo completo </etapaFabricacao>
+    </fabricantesNacionais>
+    <viasAdministracao>ORAL</viasAdministracao>
+    <ifaUnico>true</ifaUnico>
+    <conservacao>CONSERVAR EM  TEMPERATURA AMBIENTE ( AMBIENTE COM TEMPERATURA ENTRE 15 E 30ºC)</conservacao>
+    <conservacao>PROTEGER DA LUZ</conservacao>
+    <restricaoPrescricao>Venda sem Prescrição Médica</restricaoPrescricao>
+    <restricaoUso>Adulto e Pediátrico acima de  3 meses</restricaoUso>
+    <destinacao>Comercial</destinacao>
+    <restricaoHospitais>N</restricaoHospitais>
+    <tarja>Sem Tarja</tarja>
+    <medicamentoReferencia>N</medicamentoReferencia>
+    <apresentacaoFracionada>N</apresentacaoFracionada>
+    <dataVencimentoRegistro />
+    <ativa>true</ativa>
+    <inativa>false</inativa>
+    <emAnalise>false</emAnalise>
+</apresentacoes>

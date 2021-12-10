@@ -1,0 +1,96 @@
+
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+class Medicamento{
+
+  String _id = "";
+  String _cod = "";
+  String _produto = "";
+  String _apresentacao = "";
+  String _descricao = "";
+  String _substancia = "";
+  String _pa = "";
+
+  Medicamento();
+
+  Medicamento.fromDocumentSnapshot(DocumentSnapshot documentSnapshot){
+
+    this.id = documentSnapshot.id;
+    this.cod = documentSnapshot["cod"];
+    this.produto = documentSnapshot["produto"];
+    this.apresentacao     = documentSnapshot["apresentacao"];
+    this.descricao      = documentSnapshot["descricao"];
+    this.substancia   = documentSnapshot["substancia"];
+    this.pa  = documentSnapshot["pa"];
+  }
+
+  Medicamento.gerarId(){
+
+    FirebaseFirestore db = FirebaseFirestore.instance;
+    CollectionReference medicamentos = db.collection("meus_medicamentos");
+    this.id = medicamentos.doc().id;
+  }
+
+  Map<String, dynamic> toMap(){
+
+    Map<String, dynamic> map = {
+      "id" : this.id,
+      "cod" : this.cod,
+      "produto" : this.produto,
+      "apresentacao" : this.apresentacao,
+      "descricao" : this.descricao,
+      "substancia" : this.substancia,
+      "pa" : this.pa,
+
+    };
+
+    return map;
+
+  }
+
+
+  String get pa => _pa;
+
+  set pa(String value) {
+    _pa = value;
+  }
+
+  String get substancia => _substancia;
+
+  set substancia(String value) {
+    _substancia = value;
+  }
+
+  String get descricao => _descricao;
+
+  set descricao(String value) {
+    _descricao = value;
+  }
+
+  String get apresentacao => _apresentacao;
+
+  set apresentacao(String value) {
+    _apresentacao = value;
+  }
+
+  String get produto => _produto;
+
+  set produto(String value) {
+    _produto = value;
+  }
+
+  String get cod => _cod;
+
+  set cod(String value) {
+    _cod = value;
+  }
+
+  String get id => _id;
+
+  set id(String value) {
+    _id = value;
+  }
+
+
+}

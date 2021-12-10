@@ -1,0 +1,130 @@
+import 'package:flutter/material.dart';
+import 'package:lembra_do_remedio/model/remedy_model.dart';
+import 'package:lembra_do_remedio/repository/suggestion_repository.dart';
+
+class RegistrationRemedy extends StatelessWidget {
+  final String id;
+  const RegistrationRemedy({Key? key, required this.id}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var repository = SuggestionRepository();
+
+    final codigoProdutoController = TextEditingController();
+    final nomeComercialController = TextEditingController();
+    // final classesTerapeuticasController = TextEditingController();
+    // final principioAtivoController = TextEditingController();
+    // final medicamentoReferenciaController = TextEditingController();
+    // final categoriaRegulatoriaController = TextEditingController();
+
+
+    return Scaffold(
+        body: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("imagens/fundo.png"), fit: BoxFit.cover)),
+            padding: EdgeInsets.all(100),
+            child: SingleChildScrollView(
+              child: SafeArea(
+                  child: FutureBuilder<RemedyModel>(
+                      future: repository.fetchResults(id),
+                      builder: (context, snapshot) {
+
+                        if (snapshot.hasData && snapshot.data != null) {
+                          codigoProdutoController.text =
+                              snapshot.data!.codigoProduto;
+                          nomeComercialController.text =
+                              snapshot.data!.nomeComercial;
+                          // classesTerapeuticasController.text = snapshot.data!.classesTerapeuticas;
+                          // principioAtivoController.text = snapshot.data!.principioAtivo;
+                          // medicamentoReferenciaController.text = snapshot.data!.medicamentoReferencia;
+                          // categoriaRegulatoriaController.text = snapshot.data!.categoriaRegulatoria;
+
+                          return Column(
+                            children: [
+
+                              TextField(
+                                controller: codigoProdutoController,
+                                style: TextStyle(fontSize: 20),
+                                decoration: InputDecoration(
+                                    contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                                    filled: true,
+                                    fillColor: Colors.white,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(6))
+                                ),
+                              ),
+
+                              TextField(
+                                controller: nomeComercialController,
+                                style: TextStyle(fontSize: 20),
+                                decoration: InputDecoration(
+                                    contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                                    filled: true,
+                                    fillColor: Colors.white,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(6))
+                                ),
+                              )
+
+                              // TextField(
+                              //   controller: classesTerapeuticasController,
+                              //   style: TextStyle(fontSize: 20),
+                              //   decoration: InputDecoration(
+                              //       contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                              //       filled: true,
+                              //       fillColor: Colors.white,
+                              //       border: OutlineInputBorder(
+                              //           borderRadius: BorderRadius.circular(6))
+                              //   ),
+                              // ),
+                              //
+                              // TextField(
+                              //   controller: principioAtivoController,
+                              //   style: TextStyle(fontSize: 20),
+                              //   decoration: InputDecoration(
+                              //       contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                              //       filled: true,
+                              //       fillColor: Colors.white,
+                              //       border: OutlineInputBorder(
+                              //           borderRadius: BorderRadius.circular(6))
+                              //   ),
+                              // ),
+                              //
+                              // TextField(
+                              //   controller: medicamentoReferenciaController,
+                              //   style: TextStyle(fontSize: 20),
+                              //   decoration: InputDecoration(
+                              //       contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                              //       filled: true,
+                              //       fillColor: Colors.white,
+                              //       border: OutlineInputBorder(
+                              //           borderRadius: BorderRadius.circular(6))
+                              //   ),
+                              // ),
+                              //
+                              // TextField(
+                              //   controller: categoriaRegulatoriaController,
+                              //   style: TextStyle(fontSize: 20),
+                              //   decoration: InputDecoration(
+                              //       contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                              //       filled: true,
+                              //       fillColor: Colors.white,
+                              //       border: OutlineInputBorder(
+                              //           borderRadius: BorderRadius.circular(6))
+                              //   ),
+                              // )
+
+                            ],
+                          );
+                        } else {
+                          return Center(
+                            child: CircularProgressIndicator(),
+                          );}
+                      })
+              ),
+        )
+      )
+    );
+  }
+}

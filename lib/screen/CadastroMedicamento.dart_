@@ -1,0 +1,144 @@
+import 'dart:io';
+import 'package:brasil_fields/brasil_fields.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:lembra_do_remedio/model/Medicamento.dart';
+import 'package:validadores/Validador.dart';
+import 'package:flutter/material.dart';
+
+class CadastroMedicamento extends StatefulWidget {
+  @override
+  _CadastroMedicamentoState createState() => _CadastroMedicamentoState();
+}
+
+class _CadastroMedicamentoState extends State<CadastroMedicamento> {
+
+  TextEditingController _controllerCod = TextEditingController();
+  TextEditingController _controllerProduto = TextEditingController();
+  TextEditingController _controllerApresentacao = TextEditingController();
+  TextEditingController _controllerDescricao = TextEditingController();
+  TextEditingController _controllerSubstancia = TextEditingController();
+  TextEditingController _controllerPa = TextEditingController();
+
+
+  _salvarMedicamento() async {
+    //Salvar medicamento no Firestore
+    _cadastrarMedicamento(Medicamento medicamento) {
+      FirebaseFirestore db = FirebaseFirestore.instance;
+      db.collection("medicamentos").doc("firebaseUser.user!.uid").set(
+          medicamento.toMap());
+    }
+
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text("Cadastro de Medicamento"),
+        ),
+        body: Container(
+          padding: EdgeInsets.all(16),
+          child: Center(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  TextField(
+                    controller: _controllerCod,
+                    autofocus: true,
+                    keyboardType: TextInputType.text,
+                    style: TextStyle(fontSize: 20),
+                    decoration: InputDecoration(
+                        contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                        hintText: "Codigo",
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(6))),
+                  ),
+                  TextField(
+                    controller: _controllerProduto,
+                    keyboardType: TextInputType.text,
+                    style: TextStyle(fontSize: 20),
+                    decoration: InputDecoration(
+                        contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                        hintText: "Medicamento",
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(6))),
+                  ),
+                  TextField(
+                    controller: _controllerApresentacao,
+                    keyboardType: TextInputType.text,
+                    style: TextStyle(fontSize: 20),
+                    decoration: InputDecoration(
+                        contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                        hintText: "Apresentação",
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(6))),
+                  ),
+                  TextField(
+                    controller: _controllerDescricao,
+                    keyboardType: TextInputType.text,
+                    style: TextStyle(fontSize: 20),
+                    decoration: InputDecoration(
+                        contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                        hintText: "Descrição",
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(6))),
+                  ),
+                  TextField(
+                    controller: _controllerSubstancia,
+                    keyboardType: TextInputType.text,
+                    style: TextStyle(fontSize: 20),
+                    decoration: InputDecoration(
+                        contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                        hintText: "Substancia",
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(6))),
+                  ),
+                  TextField(
+                    controller: _controllerPa,
+                    keyboardType: TextInputType.text,
+                    style: TextStyle(fontSize: 20),
+                    decoration: InputDecoration(
+                        contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                        hintText: "PA",
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(6))),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 16, bottom: 10),
+                    child: RaisedButton(
+                        child: Text(
+                          "Cadastrar",
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                        color: Color(0xff1ebbd8),
+                        padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                        onPressed: () {
+                        }
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+  }
+
+  noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+}

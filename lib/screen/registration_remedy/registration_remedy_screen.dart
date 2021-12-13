@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lembra_do_remedio/model/remedy_model.dart';
-import 'package:lembra_do_remedio/repository/suggestion_repository.dart';
+import 'package:lembra_do_remedio/database/suggestion_repository.dart';
 
 
 class RegistrationRemedy extends StatelessWidget {
@@ -39,9 +39,9 @@ class RegistrationRemedy extends StatelessWidget {
       int horario = _horarioController.value as int;
       int idNotificacao = _idNotificacao.value as int;
 
-      RemedyModel remedy = RemedyModel(idMedicamento: '', nomeComercial: '', atc: '',
+      RemedyModel remedy = RemedyModel(id: '', nomeComercial: '', atc: '',
           medicamentoReferencia: '', categoriaRegulatoria: '', quantidade:0, horario:0, diasRecorrentes: 0, idNotificacao: 0 );
-      remedy.idMedicamento = idMedicamento;
+      remedy.id = idMedicamento;
       remedy.nomeComercial = nomeComercial;
       remedy.atc = atc;
       remedy.medicamentoReferencia = medicamentoReferencia;

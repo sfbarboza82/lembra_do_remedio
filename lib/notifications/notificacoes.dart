@@ -4,47 +4,47 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 class Notificacoes {
-
   late BuildContext _context;
 
-  Future<FlutterLocalNotificationsPlugin> initNotifies(BuildContext context) async{
+  Future<FlutterLocalNotificationsPlugin> initNotifies(
+      BuildContext context) async {
     this._context = context;
-    //iniciar notificação
+    //iniciar notificações
     var initializationSettingsAndroid =
-    new AndroidInitializationSettings('app_icon');
+        new AndroidInitializationSettings('app_icon');
     var initializationSettingsIOS = new IOSInitializationSettings();
     var initializationSettings = new InitializationSettings(
         android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
-    FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
-    flutterLocalNotificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: onSelectNotification);
-    return flutterLocalNotificationsPlugin;
+    FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+        new FlutterLocalNotificationsPlugin();
 
+    return flutterLocalNotificationsPlugin;
   }
 
   //mostrar notificacao e tempo
-  Future showNotification(String title, String description, int time, int id, FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin) async {
+  Future showNotification(String title, String description, int time, int id,
+      FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin) async {
     await flutterLocalNotificationsPlugin.zonedSchedule(
         id.toInt(),
         title,
         description,
         tz.TZDateTime.now(tz.local).add(Duration(milliseconds: time)),
         const NotificationDetails(
-            android: AndroidNotificationDetails(
-                'medicines_id', 'medicines', 'medicines_notification_channel',
+            android: AndroidNotificationDetails('medicines_id', 'medicines',
                 importance: Importance.high,
                 priority: Priority.high,
                 color: Colors.cyanAccent)),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
-        UILocalNotificationDateInterpretation.absoluteTime);
+            UILocalNotificationDateInterpretation.absoluteTime);
   }
 
   //cancelar notificacao
-  Future removeNotify(int notifyId, FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin) async{
-    try{
+  Future removeNotify(int notifyId,
+      FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin) async {
+    try {
       return await flutterLocalNotificationsPlugin.cancel(notifyId);
-    }catch(e){
+    } catch (e) {
       return null;
     }
   }
@@ -61,5 +61,4 @@ class Notificacoes {
       },
     );
   }
-
 }

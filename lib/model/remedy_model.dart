@@ -1,5 +1,5 @@
 class RemedyModel {
-  late String idMedicamento = "";
+  late String id = "";
   late String nomeComercial = "";
   late String atc = "";
   late String medicamentoReferencia = "";
@@ -10,7 +10,7 @@ class RemedyModel {
   late int idNotificacao;
 
   RemedyModel({
-    required this.idMedicamento,
+    required this.id,
     required this.nomeComercial,
     required this.atc,
     required this.medicamentoReferencia,
@@ -31,7 +31,7 @@ class RemedyModel {
 
   Map<String, dynamic> toMap() {
     Map<String, dynamic> map = {
-      "idMedicamento": this.idMedicamento,
+      "idMedicamento": this.id,
       "nomeComercial": this.nomeComercial,
       "atc": this.atc,
       "medicamentoReferencia": this.medicamentoReferencia,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lembra_do_remedio/screen/registration_user_screen.dart';
-import 'package:lembra_do_remedio/screen/home_screen.dart';
+import 'package:lembra_do_remedio/screen/login_screen.dart';
 import 'package:lembra_do_remedio/screen/panel_doctor_screen.dart';
 import 'package:lembra_do_remedio/screen/panel_patient_screen.dart';
 
@@ -10,7 +10,7 @@ class Rotas {
 
     switch (settings.name) {
       case "/":
-        return MaterialPageRoute(builder: (_) => Home());
+        return MaterialPageRoute(builder: (_) => Login());
       case "/cadastro-usuario":
         return MaterialPageRoute(builder: (_) => RegistrationUser());
       case "/painel-medico":

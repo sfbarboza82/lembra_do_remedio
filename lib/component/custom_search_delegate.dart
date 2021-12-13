@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lembra_do_remedio/model/suggestion_model.dart';
-import 'package:lembra_do_remedio/repository/suggestion_repository.dart';
+import 'package:lembra_do_remedio/database/suggestion_repository.dart';
 import 'package:lembra_do_remedio/screen/registration_remedy/registration_remedy_screen.dart';
 
 class SearchScreen extends SearchDelegate<String> {
